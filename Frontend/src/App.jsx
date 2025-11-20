@@ -5,7 +5,6 @@ import Home from './Pages/Home/Home';
 import NotFound from './Pages/NotFound/NotFound';
 import Success from './Pages/Success/Success';
 import './App.css'
-import OurMenu from './components/OurMenu';
 const App = () => {
   return (
     <>
@@ -13,7 +12,6 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/success' element={<Success/>}/>
-          <Route path="/menu" element={<OurMenu />} />
           <Route path='*' element={<NotFound/>}/>
         </Routes>
         <Toaster/>
